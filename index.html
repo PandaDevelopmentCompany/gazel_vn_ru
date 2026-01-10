@@ -165,6 +165,12 @@
   }
 }
 
+/* Для мобильных убрать белую полосу под панелью на айфонах*/
+@media (max-width: 768px) {
+  body {
+    height: calc(var(--vh, 1vh) * 100);
+  }
+}
 
   </style>
 </head>
@@ -204,6 +210,18 @@
     once: true
   });
 </script>
+
+<script>
+  // корректная высота viewport для мобильных
+  function setVh() {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  }
+
+  setVh();
+  window.addEventListener('resize', setVh);
+</script>
+
 </body>
 
 </html>
