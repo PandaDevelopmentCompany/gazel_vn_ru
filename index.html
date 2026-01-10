@@ -16,6 +16,7 @@
   <meta property="og:url" content="https://gazelvn.ru">
 
   <link rel="icon" href="https://gazelvn.ru/img/favicon.png" type="image/png">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
 <meta name="yandex-verification" content="d44c2e019da82421" />
 <meta name="google-site-verification" content="BOSb3IwdvaHSvtrJqweTwAtlhaMu2tv2kcFsC7_LcUg" />
@@ -62,6 +63,10 @@
   transform: translateX(-50%);
   z-index: 10;
   }
+
+  .logo-wrapper {
+  display: inline-block; 
+}
 
   .header-logo {
     max-width: 140px;
@@ -165,14 +170,16 @@
 </head>
 <body>
   <header class="site-header">
-  <img src="img/logo.jpg" alt="Грузоперевозки Газель Новгород" class="header-logo">
+    <div data-aos="fade-down" class="logo-wrapper">
+    <img src="img/logo.jpg" alt="Грузоперевозки Газель Новгород" class="header-logo">
+  </div>
 </header>
 
 
-  <main>
+  <main data-aos="zoom-in">
     <h1>Перевозки на Газели в Великом Новгороде</h1>
     <h2>Квартирные | Офисные | Грузовые</h2>
-    <p>+7 (952) 482-09-90</p>
+    <p>По всем вопросам <br>+7 (952) 482-09-90</p>
     <div class="btns">
       <a href="https://t.me/+79524820990" target="_blank" class="button telegram">
         <i class="fa-brands fa-telegram"></i> Написать в Telegram
@@ -187,6 +194,16 @@
   </main>
 
   <footer>© 2026 ГазельНовгород.ru <br>Создание сайта: <a style="color: #ffffff;" href="https://pandadevelopment.ru">Panda Development Studio</a></footer>
+
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 900,
+    easing: 'ease-out-cubic',
+    once: true
+  });
+</script>
 </body>
 
 </html>
