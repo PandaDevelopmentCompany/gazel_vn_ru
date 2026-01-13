@@ -17,6 +17,8 @@
 
   <link rel="icon" href="https://gazelvn.ru/img/favicon.png" type="image/png">
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/intro" rel="stylesheet">
+
 
 <meta name="yandex-verification" content="d44c2e019da82421" />
 <meta name="google-site-verification" content="BOSb3IwdvaHSvtrJqweTwAtlhaMu2tv2kcFsC7_LcUg" />
@@ -41,11 +43,11 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Arial', sans-serif;
+      font-family: 'Intro', sans-serif !important;
     }
 
     body {
-      background: url("img/background.jpg") no-repeat center center/cover;
+      background: #101010;
       height: 100vh;
       display: flex;
       flex-direction: column;
@@ -58,7 +60,7 @@
 
     .site-header {
   position: absolute;
-  top: 20px;
+  top: 40px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
@@ -73,7 +75,6 @@
     width: 100%;
     display: block;
     filter: drop-shadow(0 6px 15px rgba(255,255,255,0.2));
-    border-radius: 16px;
   }
 
   @media (max-width: 600px) {
@@ -86,7 +87,7 @@
 
     main {
       max-width: 600px;
-      background-color: rgba(0, 0, 0, 0.75);
+      background-color: #909090;
       padding: 40px;
       border-radius: 16px;
       box-shadow: 0 4px 20px rgba(255,255,255,0.2);
@@ -95,6 +96,7 @@
     h1 {
       font-size: 32px;
       margin-bottom: 10px;
+      font-weight: 300;
     }
 
     h2 {
@@ -118,15 +120,15 @@
       display: inline-block;
       padding: 12px 24px;
       font-size: 18px;
-      color: #fff;
-      background: #e63946;
+      color: #222;
+      background: #fff;
       border-radius: 8px;
       text-decoration: none;
       transition: background 0.3s ease;
     }
 
     a.button:hover {
-      background: #c72e3c;
+      background: #dfdfdf;
     }
 
     footer {
@@ -172,34 +174,51 @@
   }
 }
 
+
+.footer-gaz {
+  display: block;
+  margin: 0 auto 8px;
+  max-width: 140px;
+  width: 100%;
+  filter: drop-shadow(0 6px 15px rgba(255,255,255,0.2));
+}
+
+@media (max-width: 600px) {
+  .footer-gaz {
+    max-width: 100px;
+  }
+}
+
   </style>
 </head>
 <body>
   <header class="site-header">
     <div data-aos="fade-down" class="logo-wrapper">
-    <img src="img/logo.jpg" alt="Грузоперевозки Газель Новгород" class="header-logo">
+    <img src="img/logo.svg" alt="Грузоперевозки Газель Новгород" class="header-logo">
   </div>
 </header>
 
 
   <main data-aos="zoom-in">
-    <h1>Перевозки на Газели в Великом Новгороде</h1>
-    <h2>Квартирные | Офисные | Грузовые</h2>
-    <p>По всем вопросам <br><a style="color: #ffffff;" href="tel:+79524820990">+7 (952) 482-09-90</a> <br>Сергей</p>
+    <h1>Грузоперевозки</h1>
+    <h2>ГАЗель | 3 метра | Тент</h2>
+    <!-- <p>По всем вопросам <br><a style="color: #ffffff;" href="tel:+79524820990">+7 (952) 482-09-90</a> <br>Сергей</p> -->
     <div class="btns">
       <a href="https://t.me/+79524820990" target="_blank" class="button telegram">
         <i class="fa-brands fa-telegram"></i> Написать в Telegram
       </a>
-      <a href="https://wa.me/79524820990" target="_blank" class="button whatsapp">
-        <i class="fa-brands fa-whatsapp"></i> Написать в WhatsApp
-      </a>
-      <a href="tel:+79524820990" class="button phone">
-        <i class="fa-solid fa-phone"></i> Позвонить
-      </a>
     </div>
   </main>
 
-  <footer>© 2026 ГазельНовгород.ru <br>Создание сайта: <a style="color: #ffffff;" href="https://pandadevelopment.ru">Panda Development Studio</a></footer>
+  <footer>
+  <img src="img/GAZ.svg" alt="GAZ" class="footer-gaz">
+  © 2026 ГазельНовгород.ru <br>
+  Создание сайта:
+  <a style="color: #ffffff;" href="https://pandadevelopment.ru">
+    Panda Development Studio
+  </a>
+</footer>
+
 
 
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
